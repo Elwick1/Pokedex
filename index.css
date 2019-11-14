@@ -1,0 +1,109 @@
+body {
+    background-color: orangered;
+    margin: 0;
+    font-family: rubik;
+    color: white;
+   }
+
+.img-head {
+    display: block;
+    margin-left: 30mm;
+    margin-right: 30mm;
+    margin-top:  10mm;
+    width: 80%;
+}
+
+/* .new-team {
+    display: grid;
+    margin-left: 90mm;
+    margin-right: 90mm;
+    align-self: center;
+    width: 10%;
+} */
+
+   #pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.card {
+    list-style: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #222;
+    display: grid;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear; 
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(-0px);
+    }
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.card-subtitle {
+    font-weight: lighter;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.card-image {
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    
+}
+
+/* .list {
+    align-self: center;
+}
+
+.grid {
+    align-self: auto;
+} */
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
